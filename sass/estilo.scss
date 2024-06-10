@@ -1,0 +1,256 @@
+    @import 'variables';
+b,h3{
+    font-size: 2rem;
+}
+a{
+    text-decoration: none;
+}
+
+@import 'navegador';
+
+// INICIO
+
+.Inicio{
+    background-image: url(../fotos/fondo-cafe.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: center;
+    color: white;
+    padding: 20px;
+
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+
+    h1{
+        text-align: start;
+        margin-left: 50px;
+        font-size: 4rem;
+        width: 50%;
+    }
+    .inicio-buton {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-left: 50px;
+
+    }
+    .buton-a {
+        border: solid 1px $color-texto;
+        width: 200px;
+        text-align: center;
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .buton-a:hover {
+        background-color: $scoloer-detalles;
+        transition: .5s;
+    }
+
+    .b1 {
+        margin-left: 50px;
+    }
+    .buton-a a {
+        color: $color-texto;
+        font-size: 1.2rem;
+    }
+}
+// INICIO ---- RESPONSIVE
+
+@media (max-width: 768px) {
+    .Inicio{
+        width: 100%;
+    h1{
+        width: 100%;
+        padding: 0;
+        margin: 0 auto;
+        text-align: center;
+        width: 97%;
+        margin-bottom: 20px;
+        font-size: 2rem;
+     }
+     .inicio-buton {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+
+     }
+     .buton-a {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        
+
+     }
+
+}
+}
+// OFERTAS
+
+main{
+    background-color: $scoloer-detalles;
+    color: $color-texto;
+    text-align: center;
+    padding: 25px;
+    font-size: 1.4rem;
+}
+// OFERTAS ---- RESPONSIVE
+
+main{
+    font-size: 1rem;
+}
+
+// FOTOS Y DESCRIPCION
+
+.content {
+    background-color: $color-texto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    div{
+        display: flex;
+        align-items: center;
+    }
+    img{
+        float: left;
+        width: 50%;
+        height: auto;
+        object-fit: cover;
+        text-align: center;
+    }
+    p{
+        font-size: 1.2rem;
+        line-height: 1.4;
+        text-align: center;
+        margin: 0 40px;
+    }
+    b{
+        color: $scoloer-detalles;
+    }
+    .foto-compu, .f1{
+        display: none;
+    }
+  }
+// FOTOS Y DESCRIPCION ---- RESPONSIVE
+
+@media (max-width: 768px) {
+    .content{
+        display: flex;
+        flex-direction: column;
+        
+
+        div{
+            flex-direction: column;
+        }
+        .bebe-responsive{ display: none;}
+        .f3{display: flex;}
+        img{
+            width: 100%;
+            height: 60vh;
+        }
+        p{
+            display: flex;
+            flex-direction: column;
+            height: 40vh;
+            padding: 40px 30px;
+            height: 50vh;
+            font-size: 1.3rem;
+
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+ }
+}
+// HORARIOS
+
+.section-horario{
+    display: flex;
+    flex-direction: column;
+    background-color: $color-cafe;
+    font-size: 2rem;
+    text-align: center;
+    padding:20px 0;
+
+h2{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-bottom: 5px;
+
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.prueba{
+    display: flex;
+    flex-direction: row;
+}
+div{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+}
+p{
+    font-size: 1.3rem;
+}
+span{
+    padding: 1px ;
+    margin-top: 30px;
+    background-color: $scoloer-detalles;
+    height: 50vh;
+ }
+
+}
+// HORARIOS ---- RESPONSIVE
+
+@media (max-width: 768px) {
+
+.section-horario{
+.prueba{
+    flex-direction: column;
+}
+
+p{
+    font-size: 1.3rem;
+}
+span{
+    height: 1px;
+    width: 80%;
+    margin: 30px auto;
+}
+}
+}
+
+.galeria{
+    display: flex;
+
+img{ 
+    height: 70vh;
+    object-fit:cover;
+    object-position: center;
+    width: 100% !important;
+}
+    
+}
+
+
+@import "footer";

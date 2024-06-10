@@ -1,0 +1,30 @@
+.footer-info{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: $scoloer-detalles;
+    color: $color-texto;
+    font-size: 1.4rem;
+    height: auto;
+    padding: 20px;
+
+    input{
+        background-color: transparent;
+        border-radius: 10px;
+        color: $color-texto;
+        text-align: center;
+        border: solid 2px $color-texto;
+        padding: 10px 40px;
+        margin-top: 10px;
+        font-size: 1rem;
+    }
+    .redes, a{
+        display: flex;
+        flex-direction: column;
+        color: $color-texto;
+        margin: 20px;
+        text-decoration:underline;
+
+    }
+}

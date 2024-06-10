@@ -1,0 +1,116 @@
+@import 'variables';
+@import 'navegador';
+
+// NOSOTROS
+.nosotros{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 40vh;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    background-color: #c0966a;
+    h1{
+        font-size: 4rem;
+    }
+    p{
+        padding: 30px;
+        width: 60%;
+        font-size: 1rem;
+        line-height: 1.7rem;
+    }
+}
+
+// HISTORIA
+
+.content {
+    background-color: $color-texto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .f1{display: none;}
+    .f3{display: flex;}
+
+    div{
+        display: flex;
+        align-items: center;
+    }
+    img{
+        float: left;
+        width: 50%;
+        height: auto;
+        object-fit: cover;
+        text-align: center;
+    }
+    p{
+        font-size: 1.2rem;
+        line-height: 1.4;
+        text-align: center;
+        margin: 0 40px;
+    }
+    b{
+        color: $scoloer-detalles;
+    }
+    .separador{
+        display: flex;
+        background-color: $color-cafe;
+        height: 10vh;
+        text-align: center;
+        align-items: center;
+    
+        h3{
+            text-align: center;
+            margin: 0 auto;
+            font-size: 1.5rem;
+        }
+    }
+  }
+  .separador{
+    display: flex;
+    background-color: $color-cafe;
+    height: 10vh;
+    text-align: center; 
+    align-items: center;
+    justify-content: center;
+
+    h3{
+        display: flex;
+        font-size: 1.5rem;
+        color: $color-texto2;
+    }
+}
+//   HISTORIA ---- RESPONSIVE
+@media (max-width: 768px) {
+    .content{
+        display: flex;
+        flex-direction: column;
+
+        div{
+            display: flex;
+            flex-direction: column;
+        }
+        img{
+            width: 100%;
+            height: 50vh;
+        }
+        p{
+            display: flex;
+            flex-direction: column;
+            height: 40vh;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+        }
+        b{
+            font-size: 2rem;
+        }
+        .f3{ display: none;}
+        .f1{display: flex;}
+    }
+}
+
+  
+  @import 'footer'

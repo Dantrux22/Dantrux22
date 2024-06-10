@@ -1,0 +1,25 @@
+.header{
+        background-color: $color-cafe !important;
+     nav{
+         display: flex;
+         align-items: center !important;
+         justify-content: space-evenly;
+         max-width: 1200px;
+         margin: 0 auto;
+         padding: 0 20px;
+         padding: 10px;
+         font-size: 1.2rem;
+     }
+     a{
+         display: flex;
+         color: $color-texto2;
+         text-align: center !important;
+         font-size: 1.3rem;
+     }
+     a:hover{
+         color: #333;
+     }
+     img{
+         width:4.5rem !important;
+     }
+}
