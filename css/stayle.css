@@ -66,6 +66,7 @@ a {
   margin-left: 50px;
   font-size: 4rem;
   width: 50%;
+  animation: moveinicio 2s alternate;
 }
 .Inicio .inicio-buton {
   display: flex;
@@ -74,6 +75,7 @@ a {
   align-items: center;
   justify-content: center;
   margin-left: 50px;
+  animation: moveinicio 2s linear alternate;
 }
 .Inicio .buton-a {
   border: solid 1px #fff;
@@ -94,6 +96,14 @@ a {
   font-size: 1.2rem;
 }
 
+@keyframes moveinicio {
+  0% {
+    transform: translateX(-300px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 @media (max-width: 768px) {
   .Inicio {
     width: 100%;
@@ -129,13 +139,28 @@ main {
   color: #fff;
   text-align: center;
   padding: 25px;
-  font-size: 1.4rem;
+}
+main p {
+  font-size: 2rem;
+  animation: movemain 2s forwards infinite;
 }
 
-main {
-  font-size: 1rem;
+@keyframes movemain {
+  0% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
-
+@media (max-width: 768px) {
+  main p {
+    font-size: 1rem;
+  }
+}
 .content {
   background-color: #fff;
   display: flex;
