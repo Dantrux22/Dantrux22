@@ -21,6 +21,18 @@
         line-height: 1.7rem;
     }
 }
+// NOSOTROS-----  RESPONSIVE
+
+.nosotros{
+    h1{
+        font-size: 4rem;
+    }
+    p{
+        padding: 20px 10px;
+        width: 100%;
+        line-height: 1.5rem;
+    }
+}
 
 // HISTORIA
 
@@ -53,32 +65,19 @@
     b{
         color: $scoloer-detalles;
     }
-    .separador{
-        display: flex;
-        background-color: $color-cafe;
-        height: 10vh;
-        text-align: center;
-        align-items: center;
-    
-        h3{
-            text-align: center;
-            margin: 0 auto;
-            font-size: 1.5rem;
-        }
-    }
   }
   .separador{
     display: flex;
-    background-color: $color-cafe;
-    height: 10vh;
+    background-color: $scoloer-detalles;
+    height: 15vh;
     text-align: center; 
     align-items: center;
     justify-content: center;
 
     h3{
         display: flex;
-        font-size: 1.5rem;
-        color: $color-texto2;
+        font-size: 2rem;
+        color: $color-texto;
     }
 }
 //   HISTORIA ---- RESPONSIVE
@@ -109,6 +108,13 @@
         }
         .f3{ display: none;}
         .f1{display: flex;}
+
+    
+        .separador{
+            h3{
+                font-size: 1rem;
+            }
+        }
     }
 }
 
